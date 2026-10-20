@@ -1,0 +1,53 @@
+# --- AMBIENTES VIRTUAIS & DEPENDÊNCIAS ---
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# --- PYTHON CACHE & COMPILADOS ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+
+# --- DATASETS & IMAGENS DE TESTE ---
+# Pasta para armazenar datasets locais (não envie gigabytes de imagens para o Git)
+data/
+datasets/
+test_images/
+*.jpg
+*.png
+*.jpeg
+# Caso queira permitir algumas imagens de exemplo específicas, desmarque-as assim:
+# !data/sample.jpg
+
+# --- PESOS E MODELOS DE IA (PESADOS) ---
+# Modelos salvos, checkpoints e pesos treinados
+*.h5
+*.pkl
+*.onnx
+*.pt
+*.pth
+*.pb
+*.tflite
+*.caffemodel
+*.weights
+models/
+checkpoints/
+
+# --- CONFIGURAÇÕES DE IDEs & SISTEMA ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- DADOS SENSÍVEIS & VARIÁVEIS DE AMBIENTE ---
+# Chaves de API, tokens e senhas de banco de dados
+.env
+.env.local
+secrets.json
